@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/image1"
+            android:layout_weight="1"
+            android:src="@drawable/lipsc1"
+            android:onClick="capture" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="Score"
+            android:id="@+id/textScore"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:onClick="start" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image7"
+            android:layout_weight="1"
+            android:src="@drawable/lipsc1"
+            android:onClick="capture" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/image2"
+            android:layout_weight="1"
+            android:src="@drawable/lipsc1"
+            android:onClick="capture" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageEye"
+            android:layout_weight="1"
+            android:src="@drawable/eye"
+            android:onClick="start" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/image6"
+            android:layout_weight="1"
+            android:src="@drawable/lipsc1"
+            android:onClick="capture" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/image3"
+            android:layout_weight="1"
+            android:src="@drawable/lipsc1"
+            android:onClick="capture" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/image4"
+            android:layout_weight="1"
+            android:src="@drawable/lipsf1"
+            android:onClick="capture" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/image5"
+            android:layout_weight="1"
+            android:src="@drawable/lipsc1"
+            android:onClick="capture" />
+    </LinearLayout>
+
+</LinearLayout>
