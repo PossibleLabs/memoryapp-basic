@@ -1,6 +1,27 @@
 <resources>
-    <string name="app_name">BeatboxingMemory</string>
+    <string name="app_name">Memory App</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="tittle_menu">MEMORY APP</string>
+    <string name="start">Start</string>
+    <string name="piano">Piano</string>
+    <string name="salir">Salir</string>
+
+    <string name="tittle_bar_menu">MemoryApp</string>
+    <string name="level">Nivel: </string>
+    <string name="repeat">Repetir</string>
+    <string name="menu">Menu</string>
+
+    <string name="note_do">DO</string>
+    <string name="note_re">RE</string>
+    <string name="note_mi">MI</string>
+    <string name="note_fa">FA</string>
+    <string name="note_sol">sol</string>
+    <string name="note_la">LA</string>
+    <string name="note_si">SI</string>
+    <string name="note_reb">REB</string>
+    <string name="note_slob">SOLB</string>
+
+
 </resources>

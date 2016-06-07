@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="piano_notes">
+        <item >@raw/c4_piano</item>
+        <item >@raw/csharp4_piano</item>
+        <item >@raw/d4_piano</item>
+        <item >@raw/eflat4_piano</item>
+        <item >@raw/e4_piano</item>
+        <item >@raw/f4_piano</item>
+        <item >@raw/fsharp4_piano</item>
+        <item >@raw/g4_piano</item>
+        <item >@raw/gsharp4_piano</item>
+        <item >@raw/a4_piano</item>
+        <item >@raw/bflat4_piano</item>
+        <item >@raw/b4_piano</item>
+        <item >@raw/c5_piano</item>
+        <item >@raw/csharp5_piano</item>
+        <item >@raw/d5_piano</item>
+        <item >@raw/eflat5_piano</item>
+        <item >@raw/e5_piano</item>
+    </integer-array>
+    
+</resources>

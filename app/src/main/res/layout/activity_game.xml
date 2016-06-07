@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:weightSum="8"
+            android:layout_below="@+id/linear_layout_tittle">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color1"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color3"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color5"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color8"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color10"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color12"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color14" />
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@color/color16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/size_top_panel"
+                android:layout_weight="1"
+                android:id="@+id/linear_layout_tittle">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/tittle_bar_menu"
+                        android:id="@+id/tview_game_tittle"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/level"
+                        android:textSize="@dimen/text_size_level"
+                        android:id="@+id/text_level"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="1"
+                        android:textSize="@dimen/text_size_level"
+                        android:id="@+id/tview_level"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="4"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_do"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_do"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color1"
+                    livebutton:shadowColor="@color/color2"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_re"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_re"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color3"
+                    livebutton:shadowColor="@color/color4"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_mi"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_mi"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color5"
+                    livebutton:shadowColor="@color/color6"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_fa"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_fa"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color9"
+                    livebutton:shadowColor="@color/color8"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_sol"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_sol"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color11"
+                    livebutton:shadowColor="@color/color10"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_la"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_la"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color12"
+                    livebutton:shadowColor="@color/color13"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_si"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_si"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color14"
+                    livebutton:shadowColor="@color/color15"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_Reb"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_reb"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color17"
+                    livebutton:shadowColor="@color/color16"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_slob"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/note_slob"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color19"
+                    livebutton:shadowColor="@color/color18"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_repeat"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/repeat"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color1"
+                    livebutton:shadowColor="@color/color2"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <ru.katso.livebutton.LiveButton
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/button_menu"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/salir"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_button"
+                    livebutton:corners="@dimen/corners_button"
+                    livebutton:normalHeight="@dimen/elevation_button"
+                    livebutton:pressedHeight="@dimen/pressed_button"
+                    livebutton:backgroundColor="@color/color1"
+                    livebutton:shadowColor="@color/color2"
+                    android:layout_marginBottom="@dimen/margin_button_bottom"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

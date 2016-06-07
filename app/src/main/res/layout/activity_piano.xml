@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_top_panel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:id="@+id/linerLayout_tittlePiano">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/tittle_bar_menu"
+                    android:id="@+id/textView3"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/level"
+                    android:textSize="@dimen/text_size_level"
+                    android:id="@+id/textView_level"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="1"
+                    android:textSize="@dimen/text_size_level"
+                    android:id="@+id/textView_level_current"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:weightSum="8"
+            android:id="@+id/linearLayoit_color"
+            android:layout_below="@+id/linerLayout_tittlePiano">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color1"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color3"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color5">></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color8">></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color10">></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color12"><![CDATA[/>
+
+
+
+                ]]></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color14" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color16" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/piano_fragment"
+        layout="@layout/piano_activity"
+        android:layout_height="@dimen/size_piano"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/margin_top_piano" />
+
+    <ru.katso.livebutton.LiveButton
+        xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/button_listen"
+        android:layout_height="@dimen/size_button_height"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="@string/repeat"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_button"
+        livebutton:corners="@dimen/corners_button"
+        livebutton:normalHeight="@dimen/elevation_button"
+        livebutton:pressedHeight="@dimen/pressed_button"
+        livebutton:backgroundColor="@color/color5"
+        livebutton:shadowColor="@color/color6"
+        android:layout_marginTop="@dimen/margin_button_top"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:layout_gravity="center_horizontal" />
+    <ru.katso.livebutton.LiveButton
+        xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/button_menu"
+        android:layout_height="@dimen/size_button_height"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="@string/salir"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_button"
+        livebutton:corners="@dimen/corners_button"
+        livebutton:normalHeight="@dimen/elevation_button"
+        livebutton:pressedHeight="@dimen/pressed_button"
+        livebutton:backgroundColor="@color/color5"
+        livebutton:shadowColor="@color/color6"
+        android:layout_marginBottom="@dimen/margin_button_top"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

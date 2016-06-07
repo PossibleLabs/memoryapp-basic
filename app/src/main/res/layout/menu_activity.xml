@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_layout_menu">
+
+        <ImageView
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/memory_app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tittle_menu"
+            android:id="@+id/textViewTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_tittle"
+            android:typeface="sans"
+            android:layout_marginBottom="@dimen/margin_button_bottom"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ru.katso.livebutton.LiveButton
+                xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/button_start"
+                android:layout_height="@dimen/size_button_height"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:text="@string/start"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_button"
+                livebutton:corners="@dimen/corners_button"
+                livebutton:normalHeight="@dimen/elevation_button"
+                livebutton:pressedHeight="@dimen/pressed_button"
+                livebutton:backgroundColor="@color/color1"
+                livebutton:shadowColor="@color/color2"
+                android:layout_marginBottom="@dimen/margin_button_bottom"/>
+
+            <ru.katso.livebutton.LiveButton
+                xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/button_piano"
+                android:layout_height="@dimen/size_button_height"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:text="@string/piano"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_button"
+                livebutton:corners="@dimen/corners_button"
+                livebutton:normalHeight="@dimen/elevation_button"
+                livebutton:pressedHeight="@dimen/pressed_button"
+                livebutton:backgroundColor="@color/color5"
+                livebutton:shadowColor="@color/color6"
+                android:layout_marginBottom="@dimen/margin_button_bottom"/>
+
+            <ru.katso.livebutton.LiveButton
+                xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/button_exit"
+                android:layout_height="@dimen/size_button_height"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:text="@string/salir"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_button"
+                livebutton:corners="@dimen/corners_button"
+                livebutton:normalHeight="@dimen/elevation_button"
+                livebutton:pressedHeight="@dimen/pressed_button"
+                livebutton:backgroundColor="@color/color3"
+                livebutton:shadowColor="@color/color4"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
