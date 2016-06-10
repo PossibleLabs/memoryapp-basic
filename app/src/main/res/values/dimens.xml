@@ -19,4 +19,5 @@
     <dimen name="size_button_height">35dp</dimen>
     <dimen name="size_piano">300dp</dimen>
     <dimen name="margin_top_piano">30dp</dimen>
+    <dimen name="padding_side">20dp</dimen>
 </resources>

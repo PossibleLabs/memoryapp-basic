@@ -50,7 +50,7 @@
                 livebutton:pressedHeight="@dimen/pressed_button"
                 livebutton:backgroundColor="@color/color1"
                 livebutton:shadowColor="@color/color2"
-                android:layout_marginBottom="@dimen/margin_button_bottom"/>
+                android:layout_marginBottom="@dimen/margin_button_bottom" />
 
             <ru.katso.livebutton.LiveButton
                 xmlns:livebutton="http://schemas.android.com/apk/res-auto"
@@ -67,7 +67,7 @@
                 livebutton:pressedHeight="@dimen/pressed_button"
                 livebutton:backgroundColor="@color/color5"
                 livebutton:shadowColor="@color/color6"
-                android:layout_marginBottom="@dimen/margin_button_bottom"/>
+                android:layout_marginBottom="@dimen/margin_button_bottom" />
 
             <ru.katso.livebutton.LiveButton
                 xmlns:livebutton="http://schemas.android.com/apk/res-auto"
@@ -83,7 +83,7 @@
                 livebutton:normalHeight="@dimen/elevation_button"
                 livebutton:pressedHeight="@dimen/pressed_button"
                 livebutton:backgroundColor="@color/color3"
-                livebutton:shadowColor="@color/color4"/>
+                livebutton:shadowColor="@color/color4" />
         </LinearLayout>
 
     </LinearLayout>
